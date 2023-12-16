@@ -5,10 +5,10 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Estates NFT";
-const description = "Basic Houses";
+const namePrefix = "Globe House NFT";
+const description = "Houses";
 const baseUri =
-  "https://beige-absent-caterpillar-719.mypinata.cloud/ipfs/QmXafwuSwZe6dSyKhG9LhbBDn5hdMuCDu7XV7VbEo2hLZM/";
+  "https://beige-absent-caterpillar-719.mypinata.cloud/ipfs/QmSnjcuvVSBqoGrcrWn8HLZbHuzE5VLMW1gGzJSveB1kLe";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -25,10 +25,9 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 199,
     layersOrder: [
-      { name: "Background" },
-      { name: "House" },
+      { name: "Wall" },
       { name: "Door" },
       { name: "Window" },
       { name: "Roof" },
@@ -72,7 +71,7 @@ const pixelFormat = {
 };
 
 const background = {
-  generate: true,
+  generate: false,
   brightness: "80%",
   static: false,
   default: "#000000",
